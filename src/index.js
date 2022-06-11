@@ -3,7 +3,7 @@
  * @param {string} string
  * @returns {string}
  */
-export const  capitalizeString = str => str.split(' ').map((str) => `${str[0].toUpperCase()}${str.slice(1).toLowerCase()}`).join(' ');
+export const capitalizeString = str => str.split(' ').map((str) => `${str[0].toUpperCase()}${str.slice(1).toLowerCase()}`).join(' ');
 
 
 /**
@@ -71,7 +71,7 @@ export const reducerSwitch = (action, str) => {
  */
 export const consoleLoggerWordsForOf = string => {
     const letterArr = string.split("")
-    for(letter of letterArr) {
+    for(let letter of letterArr) {
         console.log (letter);
     }
 }
